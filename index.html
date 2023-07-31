@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container w-50 mx-auto py-5 mt-5 box">
+      <h2 class="text-center my-3 text-info">Smart Login System</h2>
+        <input
+          type="text"
+          class="form-control mb-3 rounded-1 d-none"
+          placeholder="Enter your name"
+          id="userName"
+        />
+     
+   
+        <input
+          type="email"
+          class="form-control mb-3 rounded-1"
+          placeholder="Enter your email"
+          id="userEmail"
+        />
+       
+      
+        <input
+          type="password"
+          class="form-control mb-3 rounded-1"
+          placeholder="Enter your password"
+          id="userPassword"
+        />
+     
+      <div class="text-center text-capitalize">
+        <p id="statement"></p>
+      </div>
+      <button
+      onclick="addUser()"
+        id="btnSignUp"
+        class="btn form-control btn-outline-info t my-3 rounded-1 d-none"
+      >
+        Sign Up
+      </button>
+      <button
+      onclick="signInAccount()"
+        id="btnLogin"
+        class="btn form-control btn-outline-info my-3 rounded-1"
+      >
+        Login
+      </button>
+      <p class="text-center text-white" id="signUp">
+        Don't have an account? <a href="" class="text-white text-decoration-none" onclick="signupForm()">Sign Up</a>
+      </p>
+      <p class="text-center d-none text-white" id="signIn">
+        You have an account? <a href="" class="text-white text-decoration-none">Sign In</a>
+      </p>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js "></script>
+  </body>
+</html>
